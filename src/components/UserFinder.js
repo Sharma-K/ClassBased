@@ -29,6 +29,12 @@ const DUMMY_USERS = [
 
     componentDidUpdate(prevProps, prevState){
 
+
+        // if(this.state.searchTerm.length ===0)
+        // {
+        //     throw new Error('No users provided!');
+        // }
+
         if(prevState.searchTerm!== this.state.searchTerm)
         {
             this.setState({
